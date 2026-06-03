@@ -1045,6 +1045,7 @@ em {
   border-top: 1px solid rgba(255,255,255,.08);
   padding: 8px 12px calc(8px + var(--safe-bottom));
   gap: 8px;
+  align-items: center;
   box-shadow: 0 -8px 24px rgba(14,27,63,.30);
 }
 .sticky-cta__call,
@@ -1087,6 +1088,7 @@ em {
   transition: transform var(--t-fast), background var(--t-fast);
 }
 .sticky-cta__whatsapp:active { transform: scale(.97); }
+.sticky-cta__whatsapp span { display: none; }
 
 /* ---------- Check-in ---------- */
 .checkin__grid {
