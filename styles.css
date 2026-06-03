@@ -215,8 +215,8 @@ em {
 .nav__logo-img {
   height: 40px;
   width: 40px;
-  border-radius: 8px;
-  object-fit: contain;
+  border-radius: 50%;
+  object-fit: cover;
   flex-shrink: 0;
 }
 .nav__logo-text {
