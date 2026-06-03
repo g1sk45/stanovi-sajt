@@ -100,7 +100,7 @@
 
 /* ---------- 2. Reset / base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: hidden; }
 body {
   margin: 0;
   background: var(--c-bg);
@@ -1234,6 +1234,8 @@ em {
   .nav__cta { display: none; }        /* CTA moves to drawer on phone */
   .lang { display: none; }            /* hidden by default on mobile */
   .nav__actions .lang { display: inline-flex; }  /* show lang next to hamburger */
+  .nav__actions { gap: var(--s-1); }
+  .nav__actions .lang__btn { padding: 4px 6px; min-height: 28px; font-size: var(--fs-xs); }
   .mobile-menu .lang { display: none; }           /* hide from drawer on mobile */
 
   /* Hero */
