@@ -1231,8 +1231,10 @@ em {
 
   .nav__inner { min-height: 64px; }
   .nav__logo { height: 44px; }
-  .nav__cta { display: none; }   /* CTA moves to drawer on phone */
-  .lang { display: none; }       /* lang lives inside drawer footer */
+  .nav__cta { display: none; }        /* CTA moves to drawer on phone */
+  .lang { display: none; }            /* hidden by default on mobile */
+  .nav__actions .lang { display: inline-flex; }  /* show lang next to hamburger */
+  .mobile-menu .lang { display: none; }           /* hide from drawer on mobile */
 
   /* Hero */
   .hero { min-height: auto; padding: 0; }
